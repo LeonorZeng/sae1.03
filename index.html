@@ -1,37 +1,150 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil | Groupe 104-03</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <!-- CSS perso -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<header>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="virtuelle.html">Machine Virtuelle</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="vide.html">Link</a>
-    </ul>
+<!-- NAVBAR (fixe en haut) -->
+<header class="topbar sticky-top">
+    <div class="container py-3">
+        <nav class="nav justify-content-center gap-3" aria-label="Navigation principale">
+            <a class="nav-link nav-pill active" aria-current="page" href="index.html">Accueil</a>
+            <a class="nav-link nav-pill" href="virtuelle.html">Machine Virtuelle</a>
+
+        </nav>
+    </div>
 </header>
 
-<main>
-<h1>Acceuil</h1>
-    <p>N</p>
+<!-- MAIN -->
+<main class="container my-5">
+
+    <!-- PRÉSENTATION GÉNÉRALE -->
+    <section class="mb-5">
+        <h1 class="mb-3">Présentation du projet</h1>
+
+        <p>
+            Ce site web a été réalisé dans le cadre de la
+            <strong>SAE – Introduction aux systèmes d’exploitation</strong>.
+            Il a pour objectif de présenter la création, la configuration et l’utilisation
+            d’une <strong>machine virtuelle Linux</strong>, ainsi que le déploiement d’un site web
+            sur celle-ci.
+        </p>
+
+        <p>
+            Le site constitue un <strong>dossier numérique au format HTML5 et CSS</strong>,
+            accessible directement depuis le <strong>serveur web installé sur la machine virtuelle</strong>,
+            conformément aux consignes du projet.
+        </p>
+    </section>
+
+    <!-- ÉQUIPE -->
+    <section class="mb-5">
+        <h2 class="mb-3">Travail en équipe</h2>
+
+        <p>
+            Le projet a été réalisé par le <strong>Groupe 104-03</strong>.
+            La machine virtuelle a été créée et configurée par <strong>Tomas</strong>.
+            Le développement du site web, son hébergement sur la machine virtuelle,
+            ainsi que la présentation en anglais ont été réalisés conjointement par
+            <strong>Aleyna</strong> et <strong>Leonor</strong>.
+        </p>
+
+        <div class="row g-3 mt-3">
+            <div class="col-md-4">
+                <div class="card card-soft h-100">
+                    <div class="card-body">
+                        <h3 class="h6 mb-1">Thomas</h3>
+                        <p class="mb-0 text-muted">Création et configuration de la machine virtuelle Linux</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-soft h-100">
+                    <div class="card-body">
+                        <h3 class="h6 mb-1">Aleyna</h3>
+                        <p class="mb-0 text-muted">
+                            Développement du site web, hébergement sur la VM et présentation en anglais
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-soft h-100">
+                    <div class="card-body">
+                        <h3 class="h6 mb-1">Leonor</h3>
+                        <p class="mb-0 text-muted">
+                            Développement du site web, hébergement sur la VM et présentation en anglais
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTIFS -->
+    <section class="mb-5">
+        <h2 class="mb-3">Objectifs pédagogiques</h2>
+
+        <p>
+            Cette SAE nous a permis de travailler sur plusieurs compétences liées aux
+            systèmes d’exploitation et au développement web.
+        </p>
+
+        <ul>
+            <li>Comprendre le principe de la <strong>virtualisation</strong></li>
+            <li>Créer et utiliser une <strong>machine virtuelle Linux</strong></li>
+            <li>Installer et configurer un <strong>service web</strong></li>
+            <li>Développer un site en <strong>HTML5 et CSS</strong> avec <strong>Bootstrap 5</strong></li>
+            <li>Déployer un site accessible depuis une machine virtuelle</li>
+        </ul>
+    </section>
+
+    <!-- ORGANISATION -->
+    <section class="mb-5">
+        <h2 class="mb-3">Organisation du site</h2>
+
+        <p>
+            Le site est organisé en plusieurs pages afin de faciliter la navigation
+            et la compréhension du projet :
+        </p>
+
+        <ul>
+            <li><strong>Accueil</strong> : présentation du projet et de l’équipe</li>
+            <li><strong>Machine Virtuelle</strong> : explication de la virtualisation et des choix techniques</li>
+            <li><strong>Links</strong> : accès au site hébergé, informations techniques et liens utiles</li>
+        </ul>
+    </section>
+
+
 </main>
 
-<footer>
-    <p>By Groupe104-03 for the project of virtual machine</p>
+<!-- FOOTER -->
+<footer class="footer py-4">
+    <div class="container text-center">
+        <p class="mb-0 text-muted">Groupe 104-03 — SAE Machine Virtuelle — 2025</p>
+    </div>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
+

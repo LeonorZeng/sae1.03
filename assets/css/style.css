@@ -1,49 +1,115 @@
-.nav {
-    background-color: #546A7B;
-    font-size: 2rem;
+/* 🌸 Girly pastel theme */
+:root{
+    --bg: #FFF7FB;          /* fond très clair rosé */
+    --text: #3D2C3B;        /* prune doux */
+    --primary: #F4A7C1;     /* rose pastel */
+    --primary-dark: #E98AAF;/* rose un peu plus soutenu */
+    --accent: #CBB6F2;      /* lavande pastel */
+    --white: #FFFFFF;
+    --border: rgba(61,44,59,.12);
+    --shadow: 0 14px 32px rgba(61,44,59,.10);
 }
 
-.nav-item {
-    margin: 10px;
+body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* 💗 Top bar */
+.topbar{
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+/* Navbar pills */
+.nav-pill{
+    border: 2px solid rgba(255,255,255,.85);
+    border-radius: 999px;
+    padding: 10px 22px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: .2px;
+    transition: transform .12s ease, background .12s ease, color .12s ease;
+}
+
+.nav-pill:hover{
+    background: rgba(255,255,255,.25);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.nav-pill.active{
+    background: rgba(255,255,255,.30);
+    color: #fff;
+}
+
+/* Titles */
+h1, h2{
+    letter-spacing: .2px;
+}
+
+.section-title{
+    font-weight: 800;
+}
+
+/* 💌 Cards */
+.card-soft{
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.88);
     border-radius: 20px;
-    border: aliceblue solid;
+    box-shadow: var(--shadow);
+    transition: transform .12s ease, box-shadow .12s ease;
+    backdrop-filter: blur(4px);
 }
 
-.nav-link {
-    color: aliceblue;
+.card-soft:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(61,44,59,.12);
 }
 
-.nav-link:hover {
-    color: #393D3F;
+/* Soft highlight for code blocks (IP, URL) */
+code{
+    background: rgba(244,167,193,.20);
+    border: 1px solid rgba(244,167,193,.35);
+    padding: 2px 8px;
+    border-radius: 999px;
+    color: var(--text);
 }
 
-body {
-    color: #393D3F;
-    background-color: #F1FFFC;
-    display: grid;
-    grid-template-rows: 1fr 7fr 1fr;
-    grid-template-columns: 200px 1fr;
-    grid-template-areas:
-            "header header"
-            "nav main"
-            "footer footer";
+/* Lists a bit nicer */
+main ul{
+    margin-bottom: 0;
+    padding-left: 1.2rem;
 }
 
-main{
-    grid-area: main;
+main li{
+    margin-bottom: 6px;
 }
 
-footer{
-    grid-area: footer;
-    background-color: #546A7B;
-    color: aliceblue;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* 🌷 Buttons (Bootstrap override) */
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 700;
 }
 
+.btn-primary:hover{
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
 
-header{
-    grid-area: header;
+.btn-outline-light{
+    font-weight: 700;
+}
+
+/* Footer */
+.footer{
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+}
+
+/* Slightly nicer paragraphs */
+p{
+    line-height: 1.6;
 }
