@@ -113,3 +113,23 @@ main li{
 p{
     line-height: 1.6;
 }
+
+/* =========================
+   POLICES – COHÉRENCE SITE
+   ========================= */
+
+/* Texte principal : style informatique */
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Titres : police classique (Bootstrap par défaut) */
+h1, h2, h3 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Navbar : police classique */
+.nav,
+.nav-link {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
