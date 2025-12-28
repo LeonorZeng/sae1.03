@@ -42,8 +42,173 @@
 
         <img src="assets/images/diagrammegant.png" >
 
-    </section>
+        <p>
+            PART 1 : Création et Installation de la VM
 
+
+            La première étape du projet a consisté à créer une machine virtuelle et à lancer l’installation d’un système d’exploitation Linux.
+            Le choix s’est porté sur Arch Linux, une distribution légère et personnalisable, adaptée à un environnement serveur.
+        </p>
+
+        <img src="assets/images/basearchinstall.png" >
+
+        <p>
+            Démarrage de la machine virtuelle sur l’environnement d’installation d’Arch Linux.
+            Une connexion automatique au compte administrateur root est effectuée afin de pouvoir lancer les commandes nécessaires à l’installation.
+            La connectivité réseau est ensuite vérifiée à l’aide d’une commande de test, ce qui permet de s’assurer que la machine virtuelle est bien connectée à Internet.
+
+        </p>
+        <img src="assets/images/part1img2.jpeg" width="600" height="300">
+
+        <p>
+            Définition de différents paramètres comme la langue du clavier, la localisation, le fuseau horaire ou encore les options de base du système.
+        </p>
+
+        <img src="assets/images/part1img3.jpeg" >
+
+        <p>
+            Partitionnement du disque
+            Lors de l’installation, le disque de la machine virtuelle a été partitionné afin d’organiser correctement l’espace de stockage.
+            Cette étape permet de séparer les différentes parties du système (racine, fichiers utilisateurs, etc.) et d’assurer une meilleure gestion des données.
+
+            Sécurisation du compte administrateur
+        </p>
+
+        <img src="assets/images/part1img4.jpeg" width="600" height="300">
+
+        <p> Un mot de passe a été défini pour le compte administrateur root.
+            Cette étape est essentielle afin de sécuriser l’accès au système et d’éviter toute utilisation non autorisée de la machine virtuelle.</p>
+
+        <p> PART 2 Compte utilisateurs et administrations :
+
+            Création des comptes utilisateurs:
+        </p>
+
+        <img src="assets/images/creationdesuseretduadmin.png" width="600" height="300">
+
+        <p>
+            Conformément aux consignes du projet, un compte administrateur ainsi que plusieurs comptes utilisateurs ont été créés.
+            Cette configuration permet de distinguer les rôles et d’éviter l’utilisation permanente du compte root.
+
+            Connexion au compte administrateur;
+        </p>
+
+        <img src="assets/images/logintotheadminaccount.png" >
+        <p>
+            Une connexion au compte administrateur a été effectuée afin de vérifier son bon fonctionnement.
+            Cette étape permet de s’assurer que le compte dispose bien des droits nécessaires pour administrer le système.
+
+
+            Connexion à un compte utilisateur:
+
+        </p>
+
+        <img src="assets/images/logginasauser.png" >
+
+        <p>
+            Une connexion à un compte utilisateur standard a également été réalisée. Cela permet de vérifier que les utilisateurs peuvent se connecter correctement et utiliser le système sans privilèges administrateur.
+        </p>
+
+        <p>
+            PART 3 : Groupe et permissions :
+
+            Création du groupe du binôme
+        </p>
+
+        <img src="assets/images/creationdugroup.png" >
+
+        <p>
+            Un groupe spécifique a été créé pour le binôme.
+            Ce groupe permet de gérer plus facilement les permissions et les droits d’accès des utilisateurs travaillant ensemble sur le projet.
+
+            Ajout des utilisateurs au groupe
+        </p>
+        <img src="assets/images/commandpourajouterlesbinomeaugroup.png" >
+
+        <p>
+            Les différents utilisateurs du binôme ont été ajoutés au groupe créé à l’aide de commandes Linux.
+            Permettant de centraliser la gestion des permissions et de faciliter le travail collaboratif.
+
+            Vérification de l’ajout au groupe
+
+        </p>
+        <img src="assets/images/resultatdelajoutdesbinomeaugroupbinome.png" >
+
+        <p>
+            Une vérification a été effectuée afin de s’assurer que tous les utilisateurs ont bien été ajoutés au groupe du binôme.
+            Donc la configuration des groupes a été réalisée correctement.
+
+
+            PART 4 - Installation et configuration du serveur web
+
+            Installation du serveur web Apache
+        </p>
+
+        <img src="assets/images/installationdeapache.png" >
+        <p>
+            Installation du serveur web Apache afin d’héberger le site web sur la machine virtuelle.
+
+            Accès aux fichiers de configuration
+        </p>
+        <img src="assets/images/creationdunprocessusaulencementpourdemarerlesiteaulancementdelavm.png" >
+        <p>
+            Les fichiers de configuration d’Apache ont été consultés et modifiés afin d’adapter le serveur aux besoins du projet.
+            Un répertoire spécifique a été créé pour héberger le site web, et les permissions ont été configurées pour permettre l’accès aux fichiers.
+        </p>
+
+        <img src="assets/images/decommentercettelignepourlevhost.png" >
+        <p> Le fichier de configuration des Virtual Hosts est activé dans Apache.
+            Cette directive permet à Apache de gérer plusieurs sites ou configurations différentes à partir de fichiers dédiés.
+        </p>
+        <img src="assets/images/w.jpeg" >
+        <p> l’ouverture du fichier de configuration des Virtual Hosts à l’aide d’un éditeur de texte en mode administrateur.
+            Cela permet de modifier les paramètres du serveur web afin de l’adapter aux besoins du projet, comme le choix du dossier contenant le site web.
+        </p>
+        <img src="assets/images/configdevhost.png" >
+        <p>
+            Le paramètre DocumentRoot indique le répertoire dans lequel se trouvent les fichiers du site web du projet.
+            Les permissions sont également configurées afin d’autoriser l’accès aux fichiers et d’assurer le bon fonctionnement du site.
+        </p>
+        <img src="assets/images/wo.jpeg">
+        <p>
+            Une commande de vérification a été utilisée afin de s’assurer que la configuration Apache est correcte et ne contient pas d’erreurs.
+            Cette étape est importante car elle permet d’éviter des problèmes lors du démarrage du serveur web.
+        </p>
+        <img src="assets/images/wom.png">
+        <p>
+            Création du répertoire destiné à accueillir les fichiers du site web.
+            Ce dossier correspond au chemin défini précédemment dans la configuration Apache et permet au serveur d’accéder aux fichiers HTML et CSS du projet.
+        </p>
+        <img src="assets/images/womp.jpg">
+        <p> Le service Apache a été démarré afin de rendre le site accessible immédiatement.
+            Il a également été configuré pour se lancer automatiquement au démarrage de la machine virtuelle, garantissant ainsi la disponibilité permanente du site web.
+        </p>
+        <img src="assets/images/petitmessagesurlapageweb.png">
+        <p> Les permissions des répertoires utilisés par le serveur web ont été configurées.
+            Les droits d’accès ont été définis afin de permettre au serveur Apache de lire les fichiers du site tout en limitant les droits d’écriture pour des raisons de sécurité.
+        </p>
+        <img src="assets/images/defdesdroitspourlesrepertoires.png">
+        <p>  la configuration des permissions appliquées aux fichiers du site web, notamment au fichier principal index.html.
+            Les droits ont été réglés de manière à autoriser la lecture des fichiers par le serveur web tout en protégeant leur modification.</p>
+        <img src="assets/images/creationdunprocessusaulencementpourdemarerlesiteaulancementdelavm.png">
+        <p>
+            Le service Apache a été activé afin de démarrer automatiquement lors du lancement de la machine virtuelle.
+            -> le site web reste accessible sans intervention manuelle après un redémarrage du système.
+        </p>
+        <img src="assets/images/wompw.png">
+        <p>
+            Le site web a été testé depuis un navigateur en utilisant l’adresse IP de la machine virtuelle.
+            L’affichage correct de la page confirme que le serveur web Apache fonctionne correctement et que le site est bien hébergé sur la machine virtuelle.
+        </p>
+
+
+
+
+
+
+
+
+    </section>
     <!-- CONFIGURATION -->
     <section class="mb-5">
         <h2 class="mb-3">Configuration de la machine virtuelle</h2>
