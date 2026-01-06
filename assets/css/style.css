@@ -10,6 +10,17 @@
     --shadow: 0 14px 32px rgba(61,44,59,.10);
 }
 
+        h2 { margin-top: 3rem; }
+        h3 { margin-top: 2rem; }
+        .vm-img {
+            display: block;
+            margin: 1rem auto 2rem auto;
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .section-intro { font-size: 0.95rem; }
+
 body{
     margin: 0;
     background: var(--bg);
@@ -126,6 +137,7 @@ body {
 /* Titres : police classique (Bootstrap par défaut) */
 h1, h2, h3 {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+     font-weight: 600;
 }
 
 /* Navbar : police classique */
