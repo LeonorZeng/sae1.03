@@ -1,38 +1,36 @@
-/* 🌸 Girly pastel theme */
 :root{
-    --bg: #FFF7FB;          /* fond très clair rosé */
-    --text: #3D2C3B;        /* prune doux */
-    --primary: #F4A7C1;     /* rose pastel */
-    --primary-dark: #E98AAF;/* rose un peu plus soutenu */
-    --accent: #CBB6F2;      /* lavande pastel */
+    --bg: #FFF7FB;
+    --text: #3D2C3B;
+    --primary: #F4A7C1;
+    --primary-dark: #E98AAF;
+    --accent: #CBB6F2;
     --white: #FFFFFF;
     --border: rgba(61,44,59,.12);
     --shadow: 0 14px 32px rgba(61,44,59,.10);
 }
 
-        h2 { margin-top: 3rem; }
-        h3 { margin-top: 2rem; }
-        .vm-img {
-            display: block;
-            margin: 1rem auto 2rem auto;
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-        .section-intro { font-size: 0.95rem; }
+h2 { margin-top: 3rem; }
+h3 { margin-top: 2rem; }
+.vm-img {
+    display: block;
+    margin: 1rem auto 2rem auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.section-intro { font-size: 0.95rem; }
 
-body{
+body {
+    font-family: 'JetBrains Mono', monospace;
     margin: 0;
     background: var(--bg);
     color: var(--text);
 }
 
-/* 💗 Top bar */
 .topbar{
     background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
-/* Navbar pills */
 .nav-pill{
     border: 2px solid rgba(255,255,255,.85);
     border-radius: 999px;
@@ -55,7 +53,6 @@ body{
     color: #fff;
 }
 
-/* Titles */
 h1, h2{
     letter-spacing: .2px;
 }
@@ -64,7 +61,6 @@ h1, h2{
     font-weight: 800;
 }
 
-/* 💌 Cards */
 .card-soft{
     border: 1px solid var(--border);
     background: rgba(255,255,255,.88);
@@ -79,7 +75,6 @@ h1, h2{
     box-shadow: 0 18px 40px rgba(61,44,59,.12);
 }
 
-/* Soft highlight for code blocks (IP, URL) */
 code{
     background: rgba(244,167,193,.20);
     border: 1px solid rgba(244,167,193,.35);
@@ -88,7 +83,6 @@ code{
     color: var(--text);
 }
 
-/* Lists a bit nicer */
 main ul{
     margin-bottom: 0;
     padding-left: 1.2rem;
@@ -98,7 +92,6 @@ main li{
     margin-bottom: 6px;
 }
 
-/* 🌷 Buttons (Bootstrap override) */
 .btn-primary{
     background-color: var(--primary);
     border-color: var(--primary);
@@ -114,33 +107,20 @@ main li{
     font-weight: 700;
 }
 
-/* Footer */
 .footer{
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: #fff;
 }
 
-/* Slightly nicer paragraphs */
 p{
     line-height: 1.6;
 }
 
-/* =========================
-   POLICES – COHÉRENCE SITE
-   ========================= */
-
-/* Texte principal : style informatique */
-body {
-    font-family: 'JetBrains Mono', monospace;
-}
-
-/* Titres : police classique (Bootstrap par défaut) */
 h1, h2, h3 {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
      font-weight: 600;
 }
 
-/* Navbar : police classique */
 .nav,
 .nav-link {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
